@@ -4,7 +4,21 @@ public class Main {
 
     public static void main(String[] args) {
         createObject("Merc");
+        Dodje dodje = new Dodje("Dodje", 2015, "Challenger" , 180);
+
+        MersedesBenz mersedesBenz = new MersedesBenz("Mercedes", 1998, "e500" , 5.5);
+
+        BMW bmw = new BMW("BMW", 2000, "E39" , 588);
+
+
+        Auto[] autos = {dodje, mersedesBenz, bmw,};
+        for (Auto auto : autos) {
+            System.out.println("\nAuto: " + auto.getName() + "\nYear: " + auto.getYear() + "\nModel: " + auto.getModel() + "\n_____________");
+
+        }
+
     }
+
 
     public static Auto createObject(String className) {
         switch (className) {
