@@ -1,6 +1,6 @@
 package com.company;
 
-public class Dodje extends Auto implements Printable{
+public class Dodje extends Auto implements Printable {
     private int speed;
 
     public Dodje(String name, int year, String model, int speed) {
@@ -9,14 +9,17 @@ public class Dodje extends Auto implements Printable{
     }
 
 
-
     public int getSpeed() {
         return speed;
     }
 
     @Override
-    public void print() {
-        System.out.println("Name: " + getName() + "\nYear: " + getYear() + "\nModel: " + getModel() +"\nDodje speed: " + getSpeed());
+    public String print() {
+        return
+                "Name: " + getName() + "" +
+                        "\nYear: " + getYear() + "" +
+                        "\nModel: " + getModel() + "" +
+                        "\nDodje speed: " + getSpeed();
 
     }
 }

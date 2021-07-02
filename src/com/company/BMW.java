@@ -13,8 +13,11 @@ public class BMW extends Auto implements Printable{
      }
 
      @Override
-     public void print() {
-          System.out.println("Name: " + getName() + "\nYear: " + getYear() + "\nModel: " + getModel() +"\nBmw engineVolume: " + getEngineVolume());
+     public String print() {
+          return "Name: " + getName() + "" +
+                  "\nYear: " + getYear() + "" +
+                  "\nModel: " + getModel() +"" +
+                  "\nBmw engineVolume: " + getEngineVolume();
 
      }
 }

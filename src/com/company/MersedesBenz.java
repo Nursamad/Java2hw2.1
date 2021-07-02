@@ -13,9 +13,12 @@ public class MersedesBenz extends Auto implements Printable {
     }
 
     @Override
-    public void print() {
-        System.out.println("Name: " + getName() + "\nYear: " + getYear() + "\nModel: " + getModel() +
-                "\nMerc overClock: " + getOverclocking());
+    public String print() {
+        return
+                "Name: " + getName() + "" +
+                "\nYear: " + getYear() + "" +
+                "\nModel: " + getModel() +
+                "\nMerc overClock: " + getOverclocking();
 
 
     }
